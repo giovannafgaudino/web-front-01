@@ -29,4 +29,8 @@ console.log(texto.lastIndexOf("as")); // verifica o valor da posiçã dos últim
 
 console.log(txt.slice(0,5)); //vai pegar os termos nas posições e 0 a 5. 'Estão'
 
-console.log(txt.substr(6,8)); // vai pegar os termos dps de determina posição, nesse caso o 6. 
+
+// vai pegar os termos dps de determina posição até outr posição, nesse caso dps 6ª até a 8ª. 
+console.log(txt.substr(6,8)); 
+
+
