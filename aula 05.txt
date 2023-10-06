@@ -1,0 +1,12 @@
+Estruturas de decisões e condições 
+ternário '? _ : _ ;'
+If - estrutura de condição 
+sinais de operações (comandos matemáticos)
+
+document.write - precisa de um documento index.html 
+'&&' - condição 'e'
+para que seja válido a condição 'e', todas as condições devem ser verdadeiras.
+
+'||' - condição 'ou'
+para que seja válido na condição 'ou', basta que apenas UMA condição seja verdadeira. 
+
