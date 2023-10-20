@@ -1,0 +1,2 @@
+ls -la --> listar o diretório 
+cd (nome diretório) --> entrar no diretório 
