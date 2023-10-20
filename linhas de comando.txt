@@ -1,2 +1,6 @@
 ls -la --> listar o diretório 
 cd (nome diretório) --> entrar no diretório 
+
+
+Comando for é utizada para criar repetições de instruções pelo número
+vezes que precisarmos. 
