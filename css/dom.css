@@ -1,0 +1,48 @@
+/* body { 
+    background-color: aquamarine;
+
+} */
+
+
+/* utilizar o . na frente da class */
+.container {
+    max-width: 800px;
+    border: 3px solid orange;
+    
+    border-radius: 5px;     /* arredondar a borda*/
+    background-color: rgb(202, 219, 238);
+    margin: 0 auto;         /*centralizar na tela */
+    text-align: center;
+
+}
+
+.card{
+    background: rgb(142, 88, 150);
+    height: 150px;          /*altura*/
+    text-align: center;     /*centrlizando texto na tela*/
+    line-height: 100px;      /*centrlizando texto na div*/
+    color: white;           /*cor texto*/
+}
+
+.botao{ 
+    background: red ;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 10px; 
+    cursor: pointer;    /* Deixar a mão ao passar em cima do botão */
+    
+}
+
+.Nao { 
+    background: green;
+}
+/* .botao2{
+    background: green ;
+    
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    border: 50px; 
+    cursor: pointer; 
+} */
