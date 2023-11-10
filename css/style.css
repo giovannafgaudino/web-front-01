@@ -1,0 +1,47 @@
+*{
+    list-style: none;
+}
+body{ 
+    background: rgb(177, 228, 177);
+}
+.container{
+    border: 1px solid black;
+    max-width: 500px;
+    /* auto serve para deixar centralizado de acordo com a janela e navegador */
+    margin: 20px auto; 
+    background-color: rgb(40, 61, 5);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form-control{
+    margin: 25px; 
+}
+.form-control input[type="text"]{
+    width: 80%;
+    padding: 10px;
+    outline: 0;
+}
+button {
+    margin-bottom: 20px;
+    background: lightgreen;
+    border: 0; 
+    padding: 10px; 
+    cursor: pointer;
+    
+}
+/* formulario */
+.erro{
+    text-align: left;
+    margin-left: 32px;
+    color: white
+}
+/* esconder  */
+.d-none{
+    display: none;
+}
+/* apareceu */
+.d-block{
+    display: block;
+    color: white;
+}
