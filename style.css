@@ -1,0 +1,30 @@
+.body{
+    background-color: gray;
+}
+.container{
+    background-color: rgba(0, 102, 255, 0.377);
+    border: 1px solid black;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+.form-control{ 
+    margin: 15px;
+    text-align: center;
+    
+}
+
+.form-control input[type='text']{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+button {
+    margin-bottom: 3px;
+    border-bottom: 1px solid black;
+    background-color: rgba(100, 224, 100, 0.959);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
