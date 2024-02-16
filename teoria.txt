@@ -1,0 +1,62 @@
+Convenções são boas práticas 
+
+JS é case sensitive 
+
+
+Escopo de uma variável é a região do código-fonte de seu programa em que ela está definida.
+Remember scope means which variables we have access to.
+
+Global Scope 
+Uma variável global tem escopo global, esta por sua vez fica definida em 
+toda parte de seu código JavaScript, ou seja pode ser chamada a qualquer momento.
+
+Fuction Scope 
+
+As variáveis declaradas dentro de uma função estão definidas somente dentro do corpo 
+da função, esta por sua vez funciona apenas dentro do corpo de uma função ou seja localmente. 
+
+Block Scope 
+O escopo do bloco significa declarar uma variável, não apenas dentro de uma função, 
+mas entre colchetes, como instruções if ou loops.
+
+
+Hoisyting: 
+O escopo de função em JavaScript significa que todas as variáveis declaradas dentro de uma função 
+são visíveis por todo o corpo da função. Curiosamente, isso significa que as variáveis são visíveis 
+mesmo antes de serem declaradas. Essa característica é informalmente conhecida no cenário JavaScript 
+como Hoisting, o código JavaScript nesse cenário se comporta como se todas as declarações de variável 
+em uma função fossem “içadas/elevadas” para o topo da função.
+
+Variável Var 
+As variáveis declaradas com var têm escopo global ou de função. Isso significa que elas podem ser 
+acessadas de qualquer lugar no código, dentro da função em que são declaradas ou em todo o documento, 
+se forem declaradas fora de qualquer função.
+
+Variável Const 
+As constantes declaradas com const têm escopo de bloco. Isso significa que elas só podem ser 
+acessadas no bloco de código em que são declaradas.
+
+Variável Let 
+Variáveis declaradas com let têm escopo de bloco.
+
+
+Concatenação 
+Permite quebra de linha 
+Permite interpolação 
+Aceita variáveis, operadores, 
+
+Propriedades e Metódos 
+.length - saber qts caracteres a string têm 
+.toUpperCase() - coloca tudo em letra maiscúla.
+
+num.foFixed(2) - define o número de casas decimais 
+num.toLocaleString - formatar o número (moeda, numero com vírgulas, )
+
+Documentação - site Mozzila
+
+Dúvidas:  
+Arrow 
+prompt js 
+
+Objetos em JS  
+math.random () - 
