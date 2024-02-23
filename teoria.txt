@@ -1,0 +1,12 @@
+Entrada --> Processamento de Dados --> Saída 
+
+Para executar no terminal com node: 
+
+No terminal: 
+npm i prompt-sync -- instalar o pacote 
+
+No código: 
+const prompt = require('prompt-sync')()
+
+No terminal: 
+node (nome do arquivo)
