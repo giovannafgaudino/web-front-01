@@ -1,0 +1,21 @@
+CP01 - 30/03 
+Replicar elementos dinâmicos em Javascripct no site do Airbnb 
+Funções: 
+    - Menu 
+    - Botão favoritar 
+    - Avaliação dos clientes 
+    - Galeria de fotos 
+Requisitos: 
+    - Manipulação do DOM (class.Lis.toggle e classList.add)
+    - Botão de Salvar (localStorage)
+    - Consumo de arrays de objetos 
+    - Utilizar arro fuctions e template strings 
+    - Utilizar programação funcional 
+    
+CP2 - 27/04 
+CP03 - 25/05
+
+
+Challenge 
+Projeto em React 
+

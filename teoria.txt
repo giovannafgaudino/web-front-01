@@ -1,0 +1,4 @@
+Arrays é uam estrutura de dados que armazena uma coleção de dados
+ (uma variável especial que pode conter mais de um valor:)
+
+const cars = ["Saab", "Volvo", "BMW"];
