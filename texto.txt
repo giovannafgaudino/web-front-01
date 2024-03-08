@@ -1,0 +1,22 @@
+Cookies são dados muito pequenos armazenados no seu navegador, 
+que podem economizar até 4 KB e são o único armazenamento enviado 
+a cada solicitação HTTP do navegador desse domínio. Os cookies 
+são utilizados principalmente para gerenciamento de sessões .
+
+Os sites normalmente usam cookies para garantir que os usuários 
+sejam reconhecidos quando navegam entre as páginas, para que não 
+sejam solicitados a fazer login novamente todas as vezes. Os sites 
+também usam cookies para lembrar as informações inseridas pelos 
+usuários. Por exemplo, sites de comércio eletrônico usam cookies 
+para lembrar os itens colocados em um carrinho de compras.
+
+LocalStorage, como é chamado, é o armazenamento local para seus 
+navegadores, pode economizar até 10 MB. Somente leitura do lado do cliente.
+
+
+SessionStorage faz o mesmo, mas como o próprio nome diz, é baseado 
+em sessão e será excluído após fechar o navegador, também pode economizar 
+menos que LocalStorage, como até 5 MB. Somente leitura do lado do cliente. 
+Além disso, não devemos armazenar dados de segurança nele.
+
+https://github.com/caiooliveira-tech/Atividades-JS/tree/main/Projeto%20Filmes%20LocalStorage

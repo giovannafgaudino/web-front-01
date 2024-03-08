@@ -1,0 +1,11 @@
+.flex{
+    display: flexbox;
+}
+.body{
+    width: 100%;
+}
+.header{
+    display: flex;
+    width:75%;
+    
+}
