@@ -1,0 +1,118 @@
+REACT JS 
+###Há a discussão se React JS é uma biblioteca ou framework; 
+###A documentção oficial diz que é uma biblioteca;
+
+React é uma biblioteca de código aberto com objetivo de gerecniar o 
+comportamentos dos elementos na sua tela 
+
+React é um """framework""" JavaScript criado pelo Facebook (atual Meta) 
+que é usado para criar interfaces de usuário (UI) em aplicativos web.
+
+Ele é popular por ser fácil de usar, altamente flexível e escalável,
+e é usado por muitas empresas de tecnologia, incluindo o Facebook, Instagram e Airbnb.
+
+https://youtu.be/6IuQUgeDPg0 
+
+Um framework é um conjunto de ferramentas e bibliotecas que fornecem 
+um conjunto de recursos e funcionalidades prontas para desenvolvedores 
+e desenvolvedoras de software. É 
+
+Um dos principais casos de uso do React é criar aplicações web complexas 
+que precisam ser atualizadas em tempo real.
+
+Por exemplo, o Facebook usa o React para criar sua interface de usuário, 
+que precisa ser atualizada constantemente com novas informações de amigos, 
+mensagens, e notificações.
+
+O React é uma biblioteca modular, o que significa que os componentes 
+podem ser facilmente reutilizados e compartilhados entre diferentes 
+partes da aplicação.
+
+Além disso, o React é frequentemente usado em conjunto com o 
+React Native para criar aplicações móveis nativas para iOS e Android.
+
+A principal diferença entre o React e o React Native é o tipo de aplicação que eles criam.
+
+O React é usado para criar aplicações web, enquanto o React Native 
+é usado para criar aplicações *móveis.
+
+
+COMO FUNCIONA O REACT?
+
+Cada componente tem um estado, que é uma variável que armazena as 
+informações que mudam dentro do componente, como os dados de um 
+formulário ou a cor de um botão.
+
+Quando o usuário interage com o aplicativo, realizando ações como 
+clicar em um botão ou preencher um formulário, o estado dos componentes 
+é atualizado e reflete as mudanças na UI. Isso é feito com o uso de 
+funções de callback, que são funções chamadas quando uma ação é executada 
+pelo usuário ou usuária.
+
+O React também usa o que é chamado de Virtual DOM (Document Object 
+Model Virtual), uma representação em memória da UI do aplicativo.
+
+Quando o estado dos componentes muda, o Virtual DOM é atualizado e 
+comparado com o DOM real para determinar quais mudanças precisam ser feitas na UI.
+
+
+DOM e VIRTUAL DOM 
+O DOM, ou Document Object Model, é uma representação em árvore de um 
+documento HTML ou XML. Ele é usado pelo navegador para entender o conteúdo 
+de uma página web e permitir que o usuário interaja com ela.
+
+Por exemplo, quando você clica em um botão em uma página web, o navegador 
+usa o DOM para entender o que deve acontecer. Ele procura o elemento HTML 
+correspondente ao botão no DOM, e depois executa a ação especificada pelo desenvolvedor.
+
+O problema é que o DOM pode ser lento para atualizar e manipular. Ele é uma 
+representação direta da página web, então qualquer alteração nos dados da 
+página requer uma atualização completa do DOM.
+
+Isso pode ser muito lento para aplicações web mais complexas, que podem 
+ter milhares ou até milhões de elementos HTML.
+
+Para resolver esse problema, o React introduziu o Virtual DOM, que é uma 
+representação em memória do DOM, atualizada muito mais rapidamente do que o DOM real.
+
+Quando um componente do React é atualizado, o Virtual DOM é atualizado primeiro, 
+e depois, as alterações são sincronizadas com o DOM real. Isso torna a atualização 
+da interface de usuário muito mais rápida e eficiente.
+
+
+SPA - Single Page Application 
+O que muda na verdade é a forma com que a página irá ser carregada. 
+Estamos acostumados com aplicações onde as páginas são renderizadas do 
+lado do servidor, independente da tecnologia utilizada. Isso traz um efeito: 
+cada nova página que precisa ser carregada se traduz em uma nova requisição 
+para o servidor, requisição esta para que o browser consiga carregar o HTML, 
+o CSS e o JavaScript da nova página requisitada.
+Por isso, em várias aplicações web, vemos o browser levando um “tempinho” 
+para carregar a nova página, ou vemos a nova página ficar em branco inicialmente 
+para ser carregada em seguida. Estes comportamentos ocorrem por causa do tempo 
+entre o browser fazer a requisição para carregar a nova página e o servidor responder 
+com as novas estruturas a serem renderizadas.
+
+Aplicações baseadas em frameworks SPA funcionam de maneira diferente, 
+pois nelas não há a necessidade de se fazer requisições para carregamento 
+de novas páginas. A aplicação seria “carregada” por inteiro na primeira requisição, 
+onde todo o HTML, CSS e JavaScript necessários seriam carregados de uma vez. 
+A partir deste momento, quando novas páginas precisassem ser carregadas, estas seriam 
+carregadas através de rotinas JavaScript, retirando a necessidade de requisições para 
+o servidor com a finalidade de obter o novo conteúdo a ser renderizado.
+
+- Instalar Node JS
+- npm create vite@latest
+- escolha o nome do projeto 
+- seleciona React 
+- seleciona Javascript 
+- cd (nome do projeto)
+- npm install 
+- npm run dev
+
+extensão: code snap 
+https://pt.vitejs.dev/
+https://create-react-app.dev/
+https://react.dev/
+https://www.treinaweb.com.br/
+Site com antigos sites: https://archive.org/web/
