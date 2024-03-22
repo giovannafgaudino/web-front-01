@@ -1,4 +1,3 @@
-
 import './App.css'
 import Cabecalho from './Componentes/Cabecalho/Cabecalho'
 import MainConteudos from './Componentes/MainConteudos/MainConteudos'
