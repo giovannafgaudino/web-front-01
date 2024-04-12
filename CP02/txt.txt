@@ -1,0 +1,15 @@
+CP02 - 2° Semestre 
+
+Objetivo; Costruir um site de portfólio em React 
+
+Deve conter: 
+- Menu 
+- Banner 
+- Lista de Projetos 
+- Apresentação da equipe 
+- Formulário de contato 
+- Rodapé com Copyright e mídias sociais 
+
+Requisitos 
+- O menu deve esta implementado utilizando rotas 
+- A lista de projetos deve ser mapeada através de props e apresentação 
