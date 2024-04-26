@@ -1,0 +1,18 @@
+https://tailwindcss.com/docs/installation 
+https://www.material-tailwind.com/
+npm create vite@latest 
+
+Package name: ... tailwind-aula
+Select a framework: » React
+Select a variant: » JavaScript
+cd project 
+npm i 
+npm run dev 
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+extensão: TailwindCSS IntelliSense
+
+https://www.material-tailwind.com/
+headless
