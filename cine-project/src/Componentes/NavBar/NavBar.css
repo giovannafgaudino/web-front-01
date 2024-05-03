@@ -1,0 +1,11 @@
+nav{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+nav ul{ 
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    float: right;
+}
