@@ -1,0 +1,10 @@
+Fazer login no The Movie data Base 
+
+Conseguir uma api key 
+
+ir para Api Reference
+pegar uma url da categoria que deseja 
+
+
+gerenciador de api 
+hoppscotch
