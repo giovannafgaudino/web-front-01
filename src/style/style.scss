@@ -1,0 +1,751 @@
+@use "mixins";
+$color-black: black;
+$color-white: white;
+$color-gray: gray;
+$color-gray-light: rgba(128, 128, 128, 0.356);
+$primary-color: #0d6efd;
+$color-blue: rgb(85, 171, 222);
+$color-blue-light: rgba(24, 186, 226, 0.274);
+$color-purple: rgba(212, 112, 223, 0.815);
+
+//@use "variaveis";
+// @import "~bootstrap/scss/bootstrap";
+* {
+  @include mixins.pd-mg-default(0, 0);
+  //font-family: $primary-font;
+}
+body {
+  background-color: $color-white;
+}
+header {
+  background: rgb(85, 171, 222);
+  background: linear-gradient(
+    200deg,
+    rgba(85, 171, 222, 1) 15%,
+    rgb(149, 223, 212) 100%
+  );
+  height: fit-content;
+
+  display: grid;
+
+  .head {
+    @include mixins.flex-config(row, space-between, center);
+    @include mixins.sizings();
+
+    @include mixins.breakpoint(small) {
+      // @include mixins.sizings();
+      @include mixins.my(0.5rem, 0.5rem);
+      // @include mixins.py(0.5rem, 0.5rem);
+      //@include mixins.mx(1rem, 1rem);
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @include mixins.breakpoint(medium) {
+      @include mixins.sizings();
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .Logo {
+      display: flex;
+      width: 20%;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-start;
+      @include mixins.breakpoint(small) {
+        display: flex;
+        width: 50%;
+        @include mixins.sizings();
+        // flex-direction: column;
+      }
+      @include mixins.breakpoint(medium) {
+        display: flex;
+        // @include mixins.sizings();
+        justify-content: flex-start;
+        width: 40%;
+        // flex-direction: column;
+      }
+
+      img {
+        width: 40%;
+        @include mixins.flex-config(row, center, center);
+        font-weight: bolder;
+        font-size: 0.8rem;
+        @include mixins.breakpoint(small) {
+          display: none;
+        }
+
+        @include mixins.breakpoint(medium) {
+          width: 25%;
+        }
+      }
+      p {
+        text-transform: uppercase;
+        align-items: center;
+        align-content: center;
+        margin-top: 0.4rem;
+        font-size: 0.85rem;
+        @include mixins.breakpoint(small) {
+          width: 100%;
+          font-size: 0.9rem;
+        }
+        @include mixins.breakpoint(medium) {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  nav {
+    width: 60%;
+
+    @include mixins.breakpoint(small) {
+      width: 60%;
+      display: flex;
+      justify-content: end;
+    }
+
+    @include mixins.breakpoint(medium) {
+      width: 45%;
+    }
+    .menu {
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      @include mixins.px(0.5rem, 0.5rem);
+      background-color: rgba(255, 255, 255, 0.61);
+      padding: 0;
+      border-radius: 10px;
+      @include mixins.breakpoint(small) {
+        flex-direction: column;
+        white-space: wrap;
+        width: 70%;
+        justify-content: end;
+      }
+
+      @include mixins.breakpoint(medium) {
+        width: 80%;
+      }
+      .menuItem {
+        display: flex;
+        button {
+          @include mixins.py(0.5rem, 0.5rem);
+          @include mixins.px(0.5rem, 0.5rem);
+          border: 1px solid $color-black;
+          gap: 10px;
+          border: none;
+          background-color: transparent;
+          text-decoration: none;
+          transition: 0.4s;
+          @include mixins.breakpoint(small) {
+            @include mixins.py(0.3rem, 0.3rem);
+            @include mixins.px(0.3rem, 0.3rem);
+            max-width: 100%;
+            white-space: wrap;
+          }
+
+          @include mixins.breakpoint(medium) {
+            @include mixins.py(0.5rem, 0.5rem);
+            @include mixins.px(0.5rem, 0.5rem);
+            min-width: 70%;
+            white-space: wrap;
+          }
+
+          a {
+            @include mixins.px(1rem, 1rem);
+            color: $color-black;
+            list-style: none;
+            text-decoration: none;
+            gap: 10px;
+            white-space: wrap;
+            transition: 0.3s;
+            :hover {
+              background-color: $color-blue-light;
+              border-radius: 10px;
+              @include mixins.py(0.5rem, 0.5rem);
+              @include mixins.px(1rem, 1rem);
+            }
+            @include mixins.breakpoint(small) {
+              @include mixins.py(0.3rem, 0.3rem);
+              min-width: 70%;
+              @include mixins.px(0.3rem, 0.3rem);
+              white-space: wrap;
+            }
+
+            @include mixins.breakpoint(medium) {
+              @include mixins.py(0.3rem, 0.3rem);
+              @include mixins.px(0.1rem, 0.1rem);
+              white-space: wrap;
+            }
+          }
+        }
+      }
+    }
+  }
+  .logoParceiros {
+    width: 20%;
+    justify-content: end;
+    img {
+      width: 100%;
+    }
+    @include mixins.breakpoint(small) {
+      display: none;
+    }
+
+    @include mixins.breakpoint(medium) {
+      display: none;
+    }
+    // @include mixins.breakpoint(large) {
+    //   display: none;
+    // }
+    img {
+      @include mixins.breakpoint(small) {
+        display: none;
+      }
+
+      @include mixins.breakpoint(medium) {
+        display: none;
+      }
+      // @include mixins.breakpoint(large) {
+      //   display: none;
+      // }
+    }
+  }
+}
+
+.HomeInfo {
+  @include mixins.sizings();
+  @include mixins.py(1rem, 1rem);
+  .content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include mixins.breakpoint(small) {
+      grid-template-columns: 1fr;
+    }
+    @include mixins.breakpoint(medium) {
+      grid-template-columns: 1fr 1fr;
+    }
+    .title {
+      h1 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1rem;
+      }
+    }
+    .apoio-psicologico {
+      margin: 0 auto;
+      text-align: justify;
+      height: fit-content;
+      min-width: 300px;
+      @include mixins.py(0, 0);
+      gap: 1rem;
+      .card {
+        gap: 1rem;
+        @include mixins.px(1rem, 1rem);
+        @include mixins.py(1rem, 1rem);
+        @include mixins.my(0, 0.5rem);
+        background-color: $color-blue-light;
+        border: none;
+        img{
+          @include mixins.sizings(100%, 0 auto);
+          
+          border-radius: 10px;
+        }
+        h4, p {
+          padding: 0;
+          margin: 0;
+
+        }
+        ul{
+          @include mixins.py(0, 0);
+          @include mixins.my(0,0);
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          li{
+            width: 75%;
+            text-align: left;
+          }
+        }
+      }
+      .btns {
+        display: flex;
+        @include mixins.sizings();
+        justify-content: space-between;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-tracks: center;
+        gap: 1rem;
+        button {
+          @include mixins.sizings(60%, 0 auto);
+          
+          margin: 0.5rem;
+          padding: 4px;
+          gap: 1rem;
+          background-color: $color-blue;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+    }
+    .Accordion {
+      text-align: justify;
+      height: fit-content;
+      iframe {
+        width: 100%;
+        height: 100%;
+        @include mixins.sizings();
+        display: flex;
+        @include mixins.py(1rem, 1rem);
+        // @include mixins.px(1rem, 1rem);
+      }
+    }
+    .noticias {
+      width: 100%;
+
+      .noticias-main {
+        border: 0.5px solid $color-gray-light;
+        border-radius: 10px;
+        .noticias-box {
+          background-color: $color-white;
+          @include mixins.py(1rem, 1rem);
+          @include mixins.px(1rem, 1rem);
+          @include mixins.my(0, 1rem);
+          border-radius: 10px;
+
+          h1 {
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: wavy;
+          }
+          .descrition {
+            font-size: 1rem;
+            text-align: justify;
+          }
+
+          .noticia-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include mixins.my(0, 1rem);
+
+            img {
+              width: 100%;
+              border-radius: 10px;
+            }
+          }
+
+          .texto-noticia {
+            font-size: 1rem;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+.PortalContent {
+  @include mixins.py(1.5rem, 1rem);
+  @include mixins.sizings();
+  .mainInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    @include mixins.breakpoint(small) {
+      grid-template-columns: 1fr;
+    }
+    @include mixins.breakpoint(medium) {
+      grid-template-columns: 50% 50%;
+    }
+    .content {
+      display: flex;
+      height: fit-content;
+      #portal-paciente {
+        // position: relative;
+        background: rgb(211, 112, 223);
+        background: linear-gradient(
+          130deg,
+          rgba(212, 112, 223, 0.815) 10%,
+          rgba(245, 201, 124, 0.89) 100%
+        );
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 10px;
+        #portal {
+          width: 100%;
+          // position: relative;
+          align-items: center;
+          justify-content: center;
+          
+          h1 {
+            font-size: 1.6rem;
+          }
+          
+        }
+        .forms {
+          @include mixins.sizings(80%, 0 auto);
+          
+          form {
+            @include mixins.py(0.5rem, 0.5rem);
+            @include mixins.sizings(100%, 0 auto);
+            gap: 1rem;
+           
+            gap: 1rem;
+            label {
+              height: 3rem;
+              width: 100%;
+              border-radius: 10px;
+              border-radius: 10px;
+              input{
+                width: 100%;
+                height: 2rem;
+                align-items: center;
+                
+                @include mixins.my(0.5rem, 0.5rem);
+                text-align: center;
+                border-radius: 10px;
+                border: 0.1rem solid $color-purple;
+                background-color: $color-gray-light;
+                &::placeholder{
+                  color: $color-black;
+                }
+              }
+              
+              }
+              button {
+                width: 100%;
+                height: 2.5rem;
+                
+                @include mixins.sizings(100%, 0 auto);
+                border: none;
+                background-color: $color-purple;
+                border-radius: 10px;
+                // margin: 0 auto;
+                // padding: 0.5rem;
+                // align-items: center;
+                // justify-content: center;
+                // display: inline;
+                // border: none;
+                // border-radius: 10px;
+                // background-color: rgb(212, 112, 223);
+                // font-weight: 600;
+                // cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+    #avaliation {
+      background: rgb(211, 112, 223);
+      background: linear-gradient(
+        330deg,
+        rgba(212, 112, 223, 0.815) 10%,
+        rgba(245, 201, 124, 0.89) 100%
+      );
+      border-radius: 10px;
+      @include mixins.py(2rem, 2rem);
+      @include mixins.px(2.5rem, 2.5rem);
+      @include mixins.sizings(100%, 0 auto);
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      h1{
+        text-align: center;
+        font-size: 2.5rem;
+      }
+      p, h4, .checkboxes{
+        text-align: center;
+      }
+      .checkboxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include mixins.sizings(50%, 0 auto);
+        @include mixins.py(0, 1rem);
+      }
+      #checkbox-box {
+        font-size: 1rem;
+      }
+      .exame-container {
+        @include mixins.py(1rem, 1rem);
+        @include mixins.sizings(80%, 0 auto);
+        .exame-container-checkbox {
+          position: sticky;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+      }
+      .checkbox-consultas {
+        @include mixins.py(1rem, 1rem);
+        @include mixins.sizings(80%, 0 auto);
+        position: sticky;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        gap: 1.5rem;
+        color: $color-black;
+        
+        input {
+          height: 2rem;
+          border: none;
+          border-radius: 10px;
+          text-align: center;
+          background-color: $color-purple;
+          // color: $color-black;
+          font-weight: bolder;
+          cursor: pointer;
+          &::placeholder{
+            color: $color-black;
+          }
+          
+        }
+        input:focus{
+          outline: none;
+          background-color: transparent;
+          border: none;
+        }
+      }
+
+      #avaliation-box {
+        @include mixins.py(1rem, 1rem);
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        button {
+          width: 20%;
+          border: none;
+          gap: 1rem;
+          background: transparent;
+          margin: 0.5rem;
+          transition: 0.4s;
+          :hover {
+            scale: 1.1;
+          }
+        }
+        button img {
+          width: 100%;
+          background-color: transparent;
+          border: none;
+          border-radius: 50%;
+        }
+        #btn-avaliation {
+          position: relative;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+
+.Contato {
+  @include mixins.sizings();
+  height: 20%;
+  @include mixins.py(1rem, 1rem);
+  .humaniza-title {
+    object-fit: cover;
+    @include mixins.flex-config(row, center, center);
+    height: 20%;
+    img {
+      width: 25%;
+    }
+    h1 {
+      font-weight: 400;
+    }
+  }
+  .contactArea {
+    @include mixins.py(0.5rem, 0.5rem);
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    #contact {
+      width: 95%;
+      border-radius: 10px;
+      height: fit-content;
+      padding-bottom: 1rem;
+      .form-contact {
+        @include mixins.sizings(100%, 0 auto);
+        padding: 10%;
+        border-radius: 10px;
+        background-color: $color-blue-light;
+        h2 {
+          font-weight: 400;
+          padding-bottom: 1rem;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          input,
+          textarea,
+          button {
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            @include mixins.py(0.5rem, 0.5rem);
+          }
+          button {
+            background-color: $color-blue;
+          }
+        }
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        @include mixins.my(0.5rem, 0.5rem);
+        height: 20%;
+        border-radius: 10px;
+      }
+    }
+    .card {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      width: 95%;
+      background-color: $color-blue-light;
+      border: none;
+      .card-body {
+        @include mixins.py(0.5rem, 0.5rem);
+        iframe {
+          width: 100%;
+        }
+        a {
+          text-decoration: none;
+          color: $color-black;
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+          @include mixins.my(0.5rem, 0.5rem);
+          height: 20%;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: rgb(85, 171, 222);
+  background: linear-gradient(
+    20deg,
+    rgba(85, 171, 222, 1) 15%,
+    rgb(149, 223, 212) 100%
+  );
+  position: relative;
+  height: fit-content;
+  margin-top: 1rem;
+  padding: 0;
+  .foot {
+    @include mixins.sizings();
+    // height: 100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    @include mixins.py(0.3rem, 0.3rem);
+    align-items: center;
+    justify-content: center;
+    color: $color-black;
+    white-space: wrap;
+    @include mixins.breakpoint(small) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      align-items: center;
+      justify-content: center;
+      @include mixins.px(0.5rem, 0.5rem);
+    }
+    @include mixins.breakpoint(medium) {
+      @include mixins.py(1rem, 0.3rem);
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+
+      align-items: center;
+      justify-content: center;
+    }
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      @include mixins.breakpoint(small) {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      @include mixins.breakpoint(medium) {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .creators {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        a {
+          justify-content: space-around;
+          width: 100%;
+          margin: 0 auto;
+          margin-right: 1rem;
+          text-decoration: none;
+          color: $color-black;
+          gap: 1rem;
+        }
+      }
+      .apps {
+        img {
+          @include mixins.div-size(120px, 40px);
+          @include mixins.my(0.5rem, 0.5rem);
+          @include mixins.mx(0.5rem, 0.5rem);
+
+          @include mixins.px(0.5rem, 0.5rem);
+          @include mixins.breakpoint(small) {
+          }
+          @include mixins.breakpoint(medium) {
+          }
+        }
+        a {
+          justify-content: space-around;
+          width: 100%;
+          margin: 0 auto;
+          margin-right: 1rem;
+          text-decoration: none;
+          color: $color-black;
+          gap: 1rem;
+          @include mixins.breakpoint(small) {
+            @include mixins.sizings(100px, 40px);
+            margin-right: 0.5rem;
+          }
+          @include mixins.breakpoint(medium) {
+            @include mixins.sizings(100px, 40px);
+            margin-right: 0.5rem;
+            flex-direction: row;
+          }
+        }
+      }
+      svg {
+        @include mixins.div-size(30px, 40px);
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        gap: 1rem;
+        @include mixins.breakpoint(small) {
+          display: none;
+        }
+
+        @include mixins.breakpoint(medium) {
+          @include mixins.py(0.3rem, 0.3rem);
+          @include mixins.px(0.1rem, 0.1rem);
+          white-space: wrap;
+        }
+      }
+    }
+  }
+}

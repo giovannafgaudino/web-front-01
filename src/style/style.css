@@ -1,0 +1,806 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  background: rgb(85, 171, 222);
+  background: linear-gradient(200deg, rgb(85, 171, 222) 15%, rgb(149, 223, 212) 100%);
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+}
+header .head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  header .head {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header .head {
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+header .head .Logo {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+}
+@media (max-width: 576px) {
+  header .head .Logo {
+    display: flex;
+    width: 50%;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header .head .Logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+  }
+}
+header .head .Logo img {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 0.8rem;
+}
+@media (max-width: 576px) {
+  header .head .Logo img {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header .head .Logo img {
+    width: 25%;
+  }
+}
+header .head .Logo p {
+  text-transform: uppercase;
+  align-items: center;
+  align-content: center;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+@media (max-width: 576px) {
+  header .head .Logo p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header .head .Logo p {
+    width: 75%;
+  }
+}
+header nav {
+  width: 60%;
+}
+@media (max-width: 576px) {
+  header nav {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header nav {
+    width: 45%;
+  }
+}
+header nav .menu {
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.61);
+  padding: 0;
+  border-radius: 10px;
+}
+@media (max-width: 576px) {
+  header nav .menu {
+    flex-direction: column;
+    white-space: wrap;
+    width: 70%;
+    justify-content: end;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header nav .menu {
+    width: 80%;
+  }
+}
+header nav .menu .menuItem {
+  display: flex;
+}
+header nav .menu .menuItem button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: 1px solid black;
+  gap: 10px;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.4s;
+}
+@media (max-width: 576px) {
+  header nav .menu .menuItem button {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    max-width: 100%;
+    white-space: wrap;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header nav .menu .menuItem button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    min-width: 70%;
+    white-space: wrap;
+  }
+}
+header nav .menu .menuItem button a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  gap: 10px;
+  white-space: wrap;
+  transition: 0.3s;
+}
+header nav .menu .menuItem button a :hover {
+  background-color: rgba(24, 186, 226, 0.274);
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (max-width: 576px) {
+  header nav .menu .menuItem button a {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    min-width: 70%;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    white-space: wrap;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header nav .menu .menuItem button a {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    white-space: wrap;
+  }
+}
+header .logoParceiros {
+  width: 20%;
+  justify-content: end;
+}
+header .logoParceiros img {
+  width: 100%;
+}
+@media (max-width: 576px) {
+  header .logoParceiros {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header .logoParceiros {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  header .logoParceiros img {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  header .logoParceiros img {
+    display: none;
+  }
+}
+
+.HomeInfo {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.HomeInfo .content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 576px) {
+  .HomeInfo .content {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .HomeInfo .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.HomeInfo .content .title h1 {
+  font-size: 2rem;
+}
+.HomeInfo .content .title h3 {
+  font-size: 1rem;
+}
+.HomeInfo .content .apoio-psicologico {
+  margin: 0 auto;
+  text-align: justify;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 300px;
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 1rem;
+}
+.HomeInfo .content .apoio-psicologico .card {
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  background-color: rgba(24, 186, 226, 0.274);
+  border: none;
+}
+.HomeInfo .content .apoio-psicologico .card img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.HomeInfo .content .apoio-psicologico .card h4, .HomeInfo .content .apoio-psicologico .card p {
+  padding: 0;
+  margin: 0;
+}
+.HomeInfo .content .apoio-psicologico .card ul {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.HomeInfo .content .apoio-psicologico .card ul li {
+  width: 75%;
+  text-align: left;
+}
+.HomeInfo .content .apoio-psicologico .btns {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-tracks: center;
+  gap: 1rem;
+}
+.HomeInfo .content .apoio-psicologico .btns button {
+  width: 60%;
+  margin: 0 auto;
+  margin: 0.5rem;
+  padding: 4px;
+  gap: 1rem;
+  background-color: rgb(85, 171, 222);
+  border: none;
+  border-radius: 5px;
+}
+.HomeInfo .content .Accordion {
+  text-align: justify;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.HomeInfo .content .Accordion iframe {
+  width: 100%;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.HomeInfo .content .noticias {
+  width: 100%;
+}
+.HomeInfo .content .noticias .noticias-main {
+  border: 0.5px solid rgba(128, 128, 128, 0.356);
+  border-radius: 10px;
+}
+.HomeInfo .content .noticias .noticias-main .noticias-box {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.HomeInfo .content .noticias .noticias-main .noticias-box h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+.HomeInfo .content .noticias .noticias-main .noticias-box .descrition {
+  font-size: 1rem;
+  text-align: justify;
+}
+.HomeInfo .content .noticias .noticias-main .noticias-box .noticia-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.HomeInfo .content .noticias .noticias-main .noticias-box .noticia-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.HomeInfo .content .noticias .noticias-main .noticias-box .texto-noticia {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.PortalContent {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.PortalContent .mainInfo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+@media (max-width: 576px) {
+  .PortalContent .mainInfo {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .PortalContent .mainInfo {
+    grid-template-columns: 50% 50%;
+  }
+}
+.PortalContent .mainInfo .content {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.PortalContent .mainInfo .content #portal-paciente {
+  background: rgb(211, 112, 223);
+  background: linear-gradient(130deg, rgba(212, 112, 223, 0.815) 10%, rgba(245, 201, 124, 0.89) 100%);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.PortalContent .mainInfo .content #portal-paciente #portal {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.PortalContent .mainInfo .content #portal-paciente #portal h1 {
+  font-size: 1.6rem;
+}
+.PortalContent .mainInfo .content #portal-paciente .forms {
+  width: 80%;
+  margin: 0 auto;
+}
+.PortalContent .mainInfo .content #portal-paciente .forms form {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  gap: 1rem;
+  gap: 1rem;
+}
+.PortalContent .mainInfo .content #portal-paciente .forms form label {
+  height: 3rem;
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+.PortalContent .mainInfo .content #portal-paciente .forms form label input {
+  width: 100%;
+  height: 2rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 0.1rem solid rgba(212, 112, 223, 0.815);
+  background-color: rgba(128, 128, 128, 0.356);
+}
+.PortalContent .mainInfo .content #portal-paciente .forms form label input::-moz-placeholder {
+  color: black;
+}
+.PortalContent .mainInfo .content #portal-paciente .forms form label input::placeholder {
+  color: black;
+}
+.PortalContent .mainInfo .content #portal-paciente .forms form button {
+  width: 100%;
+  height: 2.5rem;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  background-color: rgba(212, 112, 223, 0.815);
+  border-radius: 10px;
+}
+.PortalContent #avaliation {
+  background: rgb(211, 112, 223);
+  background: linear-gradient(330deg, rgba(212, 112, 223, 0.815) 10%, rgba(245, 201, 124, 0.89) 100%);
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.PortalContent #avaliation h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.PortalContent #avaliation p, .PortalContent #avaliation h4, .PortalContent #avaliation .checkboxes {
+  text-align: center;
+}
+.PortalContent #avaliation .checkboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+.PortalContent #avaliation #checkbox-box {
+  font-size: 1rem;
+}
+.PortalContent #avaliation .exame-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.PortalContent #avaliation .exame-container .exame-container-checkbox {
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.PortalContent #avaliation .checkbox-consultas {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  position: sticky;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  gap: 1.5rem;
+  color: black;
+}
+.PortalContent #avaliation .checkbox-consultas input {
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(212, 112, 223, 0.815);
+  font-weight: bolder;
+  cursor: pointer;
+}
+.PortalContent #avaliation .checkbox-consultas input::-moz-placeholder {
+  color: black;
+}
+.PortalContent #avaliation .checkbox-consultas input::placeholder {
+  color: black;
+}
+.PortalContent #avaliation .checkbox-consultas input:focus {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.PortalContent #avaliation #avaliation-box {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+.PortalContent #avaliation #avaliation-box button {
+  width: 20%;
+  border: none;
+  gap: 1rem;
+  background: transparent;
+  margin: 0.5rem;
+  transition: 0.4s;
+}
+.PortalContent #avaliation #avaliation-box button :hover {
+  scale: 1.1;
+}
+.PortalContent #avaliation #avaliation-box button img {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+.PortalContent #avaliation #avaliation-box #btn-avaliation {
+  position: relative;
+  align-items: center;
+}
+
+.Contato {
+  width: 80%;
+  margin: 0 auto;
+  height: 20%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Contato .humaniza-title {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+.Contato .humaniza-title img {
+  width: 25%;
+}
+.Contato .humaniza-title h1 {
+  font-weight: 400;
+}
+.Contato .contactArea {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+}
+.Contato .contactArea #contact {
+  width: 95%;
+  border-radius: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 1rem;
+}
+.Contato .contactArea #contact .form-contact {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10%;
+  border-radius: 10px;
+  background-color: rgba(24, 186, 226, 0.274);
+}
+.Contato .contactArea #contact .form-contact h2 {
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.Contato .contactArea #contact .form-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.Contato .contactArea #contact .form-contact form input,
+.Contato .contactArea #contact .form-contact form textarea,
+.Contato .contactArea #contact .form-contact form button {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.Contato .contactArea #contact .form-contact form button {
+  background-color: rgb(85, 171, 222);
+}
+.Contato .contactArea #contact iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 20%;
+  border-radius: 10px;
+}
+.Contato .contactArea .card {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 95%;
+  background-color: rgba(24, 186, 226, 0.274);
+  border: none;
+}
+.Contato .contactArea .card .card-body {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.Contato .contactArea .card .card-body iframe {
+  width: 100%;
+}
+.Contato .contactArea .card .card-body a {
+  text-decoration: none;
+  color: black;
+}
+.Contato .contactArea .card .card-body iframe {
+  width: 100%;
+  height: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 20%;
+  border-radius: 10px;
+}
+
+footer {
+  background: rgb(85, 171, 222);
+  background: linear-gradient(20deg, rgb(85, 171, 222) 15%, rgb(149, 223, 212) 100%);
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 1rem;
+  padding: 0;
+}
+footer .foot {
+  width: 80%;
+  margin: 0 auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  white-space: wrap;
+}
+@media (max-width: 576px) {
+  footer .foot {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  footer .foot {
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer .foot section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media (max-width: 576px) {
+  footer .foot section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  footer .foot section {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+footer .foot section .creators {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .foot section .creators a {
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+  gap: 1rem;
+}
+footer .foot section .apps img {
+  width: 120px;
+  height: 40px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+footer .foot section .apps a {
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+  gap: 1rem;
+}
+@media (max-width: 576px) {
+  footer .foot section .apps a {
+    width: 100px;
+    margin: 40px;
+    margin-right: 0.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  footer .foot section .apps a {
+    width: 100px;
+    margin: 40px;
+    margin-right: 0.5rem;
+    flex-direction: row;
+  }
+}
+footer .foot section svg {
+  width: 30px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  gap: 1rem;
+}
+@media (max-width: 576px) {
+  footer .foot section svg {
+    display: none;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  footer .foot section svg {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    white-space: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */

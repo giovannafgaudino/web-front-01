@@ -1,0 +1,19 @@
+{
+    "exames": [
+    { 
+        "title": "Exame de Sangue",
+        "video": "https://www.youtube.com/embed/hVrpBKP9l3o?si=bw_8TcjWK09eTMAr",
+        "text": "Imagine que seu corpo é uma cidade e as células são os moradores. O exame de sangue é como um detetive que coleta informações da 'rodovia' do sangue, onde as células viajam. Ele analisa essas pistas para garantir que todos os moradores estejam felizes e saudáveis. É como um check-up divertido para a cidade do seu corpo! Os médicos usam esse check-up para garantir que você esteja saudável e, se houver algum problema, eles podem ajudar a resolver. É um jeito simples de cuidar da sua saúde!"
+    },
+    {
+        "title": "Tomografia", 
+        "video": "https://www.youtube.com/embed/wbUCTnn2T_0?si=ZLdFGVqMwIhX5bmE",
+        "text": "Vamos imaginar que seu corpo é uma cidade incrível e a tomografia é como um mapa detalhado dessa cidade. Os médicos querem saber exatamente como são os prédios e ruas por dentro, então usam uma máquina especial. Essa máquina é como um superpoder secreto que tira muitas fotos rápidas enquanto você fica deitado. É como se fosse um super-herói espiando todos os cantinhos da cidade para garantir que tudo está em ordem. As fotos são como fatias de bolo que, quando colocadas juntas, criam um mapa 3D completo da sua cidade interna. Assim, os médicos podem ver todos os detalhes, como se estivessem dando uma espiadinha por dentro da sua cidade, sem precisar mexer em nada. Então, a tomografia é como um super-herói com um mapa especial para garantir que sua cidade (seu corpo) esteja sempre segura e saudável!"
+    },
+    {
+        "title": "Ultrassonagrafia", 
+        "video": "https://www.youtube.com/embed/pMEIhZINaRs?si=q-LyzVwYNN86t6Y3",
+        "text": "O ultrassom é como uma máquina de tirar fotos mágica que os médicos usam para ver o que está acontecendo dentro do nosso corpo. Eles espalham um gelzinho na pele, que é um pouco frio, e usam uma varinha especial que emite sons que não conseguimos ouvir. Esses sons são como ecos que voltam e ajudam os médicos a criar imagens do que está escondido lá dentro, como os órgãos. É uma forma legal de os médicos verem como tudo está funcionando sem precisar abrir nada, como um superpoder mágico!"
+    }
+]
+}

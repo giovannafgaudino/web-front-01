@@ -1,0 +1,41 @@
+SPRINt 04 
+
+Front-end Design 
+Deve utilizar o mesmo projeto com base no Front-End da Sprint anterior. 
+LEmbre-se que essa base será integrada ao React na disciplina de JavaScript 
+Requisitos: 
+- Integração completa com React 
+- Utilização de Grid Layout, Flexbox e Bootstrap de forma correta (10 pontos);
+- Ultilização de HTMl semântico (10 pontos);
+- Utilização de Medias Queries (10 pontos); 
+- Responsividade Completa do projeto (Desktop - Tablet - Mobile) (40 pontos);
+Entrega: link do repositório (público) no Github. 
+
+Web Development 
+- Projeto criado em React utilizando estrutura de componentes e tratamento de estilização com Bootstrap (20 pontos);
+- Projeto em React precisa consumir de uma API utilizando recursos de json(Local), revisão do DOM e criação de eventos 
+    nas partes do projeto, estilização com sass (60 pontos);
+- Estilizar o projeto com Sass e Bootstrap, dentro dos componentes criados utilizar um pelo menos para consumir de uma API. (20 pontos);
+Regras: 
+- Pode utilizar a documentação do React como guia; 
+- O projeto deve ser criado dentro das normas W3C; 
+- O projeto precisa ter criação própria utilizando os conhecimentos adquiridos; 
+- A estrutura deve ser semântica; 
+- Versionamento do projeto usando organização no Github; 
+Entrega: O formato da entrega deve ser um arquivo compactado sem os módulos;.
+
+Feedback Sprint 03: 
+Front: (8/10)
+Precisa dar uma melhorada no nas caixas da tela de "Portal" melhore a forma com que elas reduzem em outras telas 
+mesma coisa para página de contato. Talvez usar display grid para as duas principais divs que ficam "uma para 
+esquerda outra para direita" fique melhor e mais fácil.
+Tag semântica main ou section poderiam ser aplicadas em algumas situações nas telas. 
+
+Web:(10/10)
+Muito legal! Vocês já conseguiram componentizar toda a plataforma, implementaram as rotas, agora com as próximas 
+aulas conseguiremos desenvolver um cadastro com login e senha e criar uma área do cliente e acredito que ficará 
+muito bacana o projeto de vocês! Em webdev e front veremos mais sobre CSS, então acredito que vocês poderia trabalhar 
+um pouco mais o fluxo de navegação, explicando um pouco mais na home sobre o que se trata, como funciona, benefícios e outros.
+
+
+

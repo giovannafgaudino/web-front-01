@@ -1,0 +1,34 @@
+{ 
+  "noticias": [
+  {
+    "title": "Nova Vacina Infantil Contra Vírus Sincicial Respiratório",
+    "descrition": "Cientistas desenvolvem uma vacina eficaz contra o vírus sincicial respiratório, uma das principais causas de doenças respiratórias em crianças.",
+    "image": "https://s2-oglobo.glbimg.com/1MjV4mlJb4dcKJZSJRo8JYRrFIo=/0x0:7900x5267/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/C/6/NGSnXFT3AjqcSyGVwfCA/covid-ainda-vida-com-vacina.jpg",
+    "text": "Uma nova vacina para proteger crianças contra o vírus sincicial respiratório (VSR) foi desenvolvida e mostrou resultados promissores em ensaios clínicos, oferecendo uma nova ferramenta na luta contra doenças respiratórias infantis."
+  },
+  {
+    "title": "Importância da Nutrição nos Primeiros Anos de Vida",
+    "descrition": "Estudo destaca como a nutrição adequada nos primeiros anos é crucial para o desenvolvimento físico e cognitivo das crianças.",
+    "image": "https://s2.glbimg.com/cg2eEEEdY4GZjsLa1XSdSzzSbA0=/620x452/e.glbimg.com/og/ed/f/original/2014/11/13/452256989.jpg",
+    "text": "Pesquisadores enfatizam a importância de uma dieta equilibrada e rica em nutrientes nos primeiros anos de vida, sublinhando seu impacto no desenvolvimento cerebral e no crescimento saudável das crianças."
+  },
+  {
+    "title": "Benefícios da Atividade Física para Crianças",
+    "descrition": "Especialistas discutem como a atividade física regular pode melhorar a saúde e o bem-estar das crianças.",
+    "image": "https://img-21.ccm2.net/PJx_kP3fmFq1CadWDAFIxqQUpOU=/7418547319534dbd938befacec93db10/ccm-faq/1368676.jpg",
+    "text": "A prática regular de exercícios físicos é essencial para o desenvolvimento saudável das crianças, contribuindo para o fortalecimento do sistema imunológico, melhora do humor e prevenção de doenças crônicas."
+  },
+  {
+    "title": "Prevenção e Tratamento da Obesidade Infantil",
+    "descrition": "Novas diretrizes para a prevenção e tratamento da obesidade em crianças são lançadas por organizações de saúde.",
+    "image": "https://vidaequilibrio.com.br/wp-content/uploads/2014/04/obesidade_infantil.jpg",
+    "text": "Organizações de saúde lançaram novas diretrizes para combater a obesidade infantil, destacando a importância de intervenções precoces, alimentação saudável e atividades físicas regulares para prevenir problemas de saúde a longo prazo."
+  },
+  {
+    "title": "Impacto da Tecnologia na Saúde Mental Infantil",
+    "descrition": "Estudos exploram como o uso excessivo de dispositivos eletrônicos pode afetar a saúde mental das crianças.",
+    "image": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/03/criancas_uso_celular_tablet_tecnologia.jpg?w=1220&h=674&crop=1",
+    "text": "Pesquisas recentes indicam que o uso excessivo de dispositivos eletrônicos pode estar associado a problemas de saúde mental em crianças, incluindo ansiedade e distúrbios do sono, sublinhando a necessidade de monitoramento e limites no uso da tecnologia."
+  }
+]
+}
